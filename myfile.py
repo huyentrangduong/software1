@@ -1,22 +1,17 @@
-import math
+talents = input("Enter talents: ")
+talents = float(talents)
 
-radius = input("Enter the radius of the circle: ")
+pounds = input("Enter pounds: ")
+pounds = float(pounds)
 
-radius = float(radius)
+lots = input("Enter lots: ")
+lots = float(lots)
 
-area = radius **2 * math.pi
+total_grams = (((talents*20)+ pounds)*32 + lots)*13.3
+total_grams = int(total_grams)
 
-print ("Enter the radius of the circle: The area of the circle is " + str(area))
+kilograms = int(total_grams//1000)  #convert gr to kg
+remaining_grams = (total_grams%1000)
 
-#excercise 3
-length = (input("Enter the length of the rectangle: ")
-length_int = int(length)
-
-width = (input("Enter the width of the rectangle: ")
-width_int = int(width)
-
-perimeter = (length_int + width_int)*2
-area = (length_int * width_int)
-
-print("The area of the rectangle is " + area)
-print("The perimeter of the rectangle is " + perimeter)
+print("The weight in modern units: ")
+print(f"{kilograms} + " kilograms " + "and " + {remaining_grams:.2f} + " grams."))

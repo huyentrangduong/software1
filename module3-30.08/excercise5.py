@@ -1,4 +1,3 @@
-
 talents = input("Enter talents: ")
 talents = float(talents)
 
@@ -8,10 +7,11 @@ pounds = float(pounds)
 lots = input("Enter lots: ")
 lots = float(lots)
 
-total_grams = talents + pounds + lots
-kilograms = total_grams/1000  #convert gr to kg
-#remaining_grams = 
+total_grams = (((talents*20)+ pounds)*32 + lots)*13.3
+#total_grams = int(total_grams)
 
-print("The weight in modern units:" + str(total_grams))
-#print() 
-#The program should output the kilograms and grams in the form "[kilograms] kilograms and [grams] grams."
+kilograms = int(total_grams//1000)  #convert gr to kg
+remaining_grams = (total_grams%1000)
+
+print("The weight in modern units: ")
+print(f'{kilograms} kilograms and {remaining_grams:.2f} grams.')
