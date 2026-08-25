@@ -1,17 +1,21 @@
-talents = input("Enter talents: ")
-talents = float(talents)
 
-pounds = input("Enter pounds: ")
-pounds = float(pounds)
+money = float(input("Give money: "))
 
-lots = input("Enter lots: ")
-lots = float(lots)
+cost_of_coffee = 5
 
-total_grams = (((talents*20)+ pounds)*32 + lots)*13.3
-total_grams = int(total_grams)
+if money >= cost_of_coffee:
+    print ("You have enough for coffee")
+    if money >= 20:
+        print ("  You can also buy cake")
+    takeout = input("Coffee to go?")
+    if takeout == "yes":
+        print("User is taking the coffee to go")
+    if takeout == "no":
+        print("User is having the coffee in the cafe")
 
-kilograms = int(total_grams//1000)  #convert gr to kg
-remaining_grams = (total_grams%1000)
 
-print("The weight in modern units: ")
-print(f"{kilograms} + " kilograms " + "and " + {remaining_grams:.2f} + " grams."))
+age = int(input("Enter age: "))
+if 15 <= age < 18:
+    weight = float(input("Enter weight (kg): "))
+if (age >= 18 or age >= 15 and weight >= 55):
+    print("The medicine can be used.")
