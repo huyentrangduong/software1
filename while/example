@@ -1,0 +1,48 @@
+#create a calculator program
+#the calculator should allow the user to make calculations until they decide to quit
+#the calculator should print a nemu, from which the user can choose a calculattion. 
+#the available calculation are addm minus and multiplication
+#the calculator should then ask the user for 2 munbers
+#finally, the calculator print the result of the calculation
+
+
+
+while True: #the loop continue forever until stop with break manually
+    print("1. add")
+    print("2. minu")
+    print("3. multiplication")
+    menu = input("Chooose the calculation: ")
+    
+    x1 = int(input("number1: "))
+    x2 = int(input("number2: "))
+
+    if menu == "1":
+        add = x1 + x2
+        print("result: ",add)
+    elif menu == "2":
+        minu = x1 - x2
+        print("result is ",minu)
+    elif menu == "3":
+        multiplication = x1 * x2
+        print("result is ",multiplication)
+    break
+
+
+#solution from teacher
+menu_list = "selection option:\n1. add \n2. substract \n3. multiply \n0. exist"
+selection = input (menu_list)
+
+while selection != "0":
+    x1 = float(input("number1: "))
+    x2 = float(input("number2: "))
+
+    if selection == "1":
+        print(f"result: {x1 + x2}")
+    if selection == "2":
+        print(f"result: {x1 - x2}")
+    if selection == "3":
+        print(f"result: {x1 * x2}")
+    else:
+        print(f"Incorrect option")
+    menu_list = "selection option:\n1. add \n2. substract \n3. multiply \n0. exist\n"
+    selection = input(menu_list)
