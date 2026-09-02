@@ -19,7 +19,7 @@ I completed exercise 1, 2, 3, 4 and 5
 I completed exercise 1,2,3,4,5
 
 ## Module 6
-I completed exercise 2
+I completed exercise 1,2,4
 
 ## Module 7
 
