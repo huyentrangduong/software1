@@ -1,16 +1,12 @@
 
 cities = []
-city = input("enter the name of five city: ")
-city_round = 5
-finished_round = 0
 
-
-while finished_round < city_round:
+for i in range(5):
+    city = input("Enter the name of a city: ")
     cities.append(city)
-    city = input("enter the name of five city: ")
-print ("The cities you entered: ")
-finished_rounds += 1
 
+print()
+print("\nThe cities you entered:")
 
-for n in cities:
-    print(n[1:6])
+for city in cities:
+    print(city)
