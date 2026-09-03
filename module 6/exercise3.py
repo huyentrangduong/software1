@@ -9,16 +9,13 @@ number = int(input ("Enter an integer: "))
 x = 2
 
 if number < 2:
-    print (number,"is not a prime number")
-
-
-while number >= x: 
-    if number % x == 0:
-        print (number,"is not a prime number")
-    break
-
-number = int(input ("Enter an integer: "))
-number += 1
-
-#print (number,"is a prime number")
-
+    print (number,"is not a prime number.")    
+    
+else:
+    while number > x:
+        if number % x == 0:
+            print (number,"is not a prime number.")
+            break
+        x += 1 
+    else:
+        print (number,"is a prime number.")
