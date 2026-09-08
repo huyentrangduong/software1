@@ -19,3 +19,47 @@ if 15 <= age < 18:
     weight = float(input("Enter weight (kg): "))
 if (age >= 18 or age >= 15 and weight >= 55):
     print("The medicine can be used.")
+
+
+#while
+round = 3
+while round >= 0:
+    print("Hi")
+    rounds = rounds -1
+
+#update
+# 1. INPUT
+#user_input = input(...)
+
+# 2. INITIALIZE
+#smallest = None
+#largest = None
+
+# 3. CONDITION
+#while user_input != "":
+
+    # 4. CONVERT
+    #number = int(user_input)
+
+    # 5. PROCESS / COMPARE
+    #if ...:
+    #    ...
+
+    #if ...:
+    #   ...
+
+    # 6. UPDATE / GET NEXT INPUT
+    #user_input = input(...)
+
+# 7. RESULT
+#print(...)
+
+number = int(input("Enter a number: "))
+numbers = []
+
+while number != "":
+    numbers.append(number)
+    number = int(input("Enter a number: "))
+    
+numbers.sort()    
+print (numbers)

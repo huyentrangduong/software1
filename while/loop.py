@@ -1,9 +1,9 @@
 
 #while
 rounds = 3
-while rounds >= 0:
+while rounds >= 1:
     print("Hi")
-    rounds = rounds -1
+    rounds = rounds - 1
 
 rounds = int(input("How many greetings: "))
 finished_rounds = 0

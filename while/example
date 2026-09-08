@@ -1,48 +1,52 @@
-#create a calculator program
-#the calculator should allow the user to make calculations until they decide to quit
-#the calculator should print a nemu, from which the user can choose a calculattion. 
-#the available calculation are addm minus and multiplication
-#the calculator should then ask the user for 2 munbers
-#finally, the calculator print the result of the calculation
 
 
+cities = []
+finished_round = 1
 
-while True: #the loop continue forever until stop with break manually
-    print("1. add")
-    print("2. minu")
-    print("3. multiplication")
-    menu = input("Chooose the calculation: ")
-    
-    x1 = int(input("number1: "))
-    x2 = int(input("number2: "))
+while finished_round <= 5:
+    city = input("enter the name of five city: ")
+    cities.append(city)
+    finished_round += 1
 
-    if menu == "1":
-        add = x1 + x2
-        print("result: ",add)
-    elif menu == "2":
-        minu = x1 - x2
-        print("result is ",minu)
-    elif menu == "3":
-        multiplication = x1 * x2
-        print("result is ",multiplication)
-    break
+print()
+print ("The cities you entered: ")
+
+for city in cities:
+    print(city)
+
+#Write a program that asks the user to enter numbers until they input an empty string to quit. 
+# At the end, the program prints out the five greatest numbers sorted in descending order. 
+# Hint: You can reverse the order of sorted list items by using the sort method with the reverse=True argument.
+
+number = input("enter numbers: ")
+numbers = []
+
+while number != "":
+    numbers.append(number)
+    number = input("enter numbers: ")
+
+numbers.sort(reverse=True)
+print(numbers)
 
 
-#solution from teacher
-menu_list = "selection option:\n1. add \n2. substract \n3. multiply \n0. exist"
-selection = input (menu_list)
+correct_username = "python"
+correct_password = "rules"
+attempts = 0
+max_attempts = 5
+logged_in = False
 
-while selection != "0":
-    x1 = float(input("number1: "))
-    x2 = float(input("number2: "))
+while attempts < max_attempts and not logged_in:
+    username = input("Enter username: ")
+    password = input("Enter password: ")
 
-    if selection == "1":
-        print(f"result: {x1 + x2}")
-    if selection == "2":
-        print(f"result: {x1 - x2}")
-    if selection == "3":
-        print(f"result: {x1 * x2}")
+    if username == correct_username and password == correct_password:
+        print("Welcome")
+        logged_in = True
     else:
-        print(f"Incorrect option")
-    menu_list = "selection option:\n1. add \n2. substract \n3. multiply \n0. exist\n"
-    selection = input(menu_list)
+        attempts += 1
+
+        if attempts < max_attempts:
+            print("Incorrect username or password. Please try again.")
+
+if not logged_in:
+    print("Access denied")
