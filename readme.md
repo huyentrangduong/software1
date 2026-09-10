@@ -28,7 +28,11 @@ I completed exercise 1,2,3,4,5 and 6
 
 ## Module 8
 
+I completed exercise 1, 2,3 and 4
+
 ## Module 9
+
+I completed exercise 1, 2, 3
 
 ## Module 10
 
