@@ -34,7 +34,6 @@ else:
     def inventory (items):
         for item in items:
             print(f"   - {item}")
-        return items
 
     def explore(bag):
         print ("======================================================================")
@@ -70,7 +69,7 @@ else:
         print("Goodjob! you contribute to clean the enviroment")
         item = input("What item do you want to collect? ")
         bag.append(item)
-        
+
         print("Check the items in your bag:") 
         inventory (bag)
 
