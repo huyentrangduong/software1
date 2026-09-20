@@ -29,7 +29,7 @@ else:
     def score (total):
         total = total + 10
         return total
-    total= score (total)
+    total= score(total)
 
     def inventory (items):
         for item in items:
@@ -45,7 +45,6 @@ else:
         print("\nCheck the items in your bag:")
         bag.append(new_item) 
         inventory (bag)
-         
 
     def run(bag):
         print ("======================================================================")
@@ -63,41 +62,39 @@ else:
             print("You don't have a Water Bottle in your bag, but you managed to find some water!")
         inventory (bag)
 
+
     def take(bag):
         print ("======================================================================")
         print("\n🌳 MISSION 2")
         print("You find a plastic bottle. Then take it and put it into your bag.")
         print("Goodjob! you contribute to clean the enviroment")
-
-        print("Check the items in your bag:")
-        bag.append("Plastic Bottle ♻️")  
+        item = input("What item do you want to collect? ")
+        bag.append(item)
+        
+        print("Check the items in your bag:") 
         inventory (bag)
 
     def harvest(bag):
         print ("======================================================================")
         print("\n🌳 MISSION 3")
         print("you harvest the crops. Then take it and put it into your bag.")
- 
-            
+
         print("Check the items in your bag:")
         bag.append("Crops 🌾")  
         inventory (bag)
 
-
-
     while main_menu != "lopeta":
         if main_menu == "explore" or main_menu == "1":
             explore (bag)
-
             print("\nNow, open the bag and look at your map.")
             print("There is a big tree not far from here.")
             print("You have to RUN to the big tree for 1st mission.")
             print ("======================================================================")
             main_menu = input("\n✅ Enter a command from the main menu:\n1.explore\n2.run\n3.take\n4.harvest\n5.lopeta\n")
 
-
         elif main_menu == "run" or main_menu == "2":
             run(bag)
+            total= score(total)
 
             print(f"🔅 Congratulation! You completed the 1st mission. Your score is {total}.")
             print ("======================================================================")
@@ -105,16 +102,16 @@ else:
 
         elif main_menu == "take" or main_menu == "3":
             take(bag)
+            total= score(total)
 
-            total= score (total)
             print(f"🔅 Congratulation! You completed the 2nd mission. Your score is {total}.")
             print ("======================================================================")
             main_menu = input("\n✅ Enter a command from the main menu:\n1.explore\n2.run\n3.take\n4.harvest\n5.lopeta\n")
 
         elif main_menu == "harvest" or main_menu == "4":
             harvest(bag)
- 
-            total= score (total)
+            total= score(total)
+
             print(f"🔅 Congratulation! You completed the 3rd mission. Your score is {total}.")
             print ("======================================================================")
             print("\n🏁 Now you need to return to the starting point.")
@@ -135,11 +132,8 @@ else:
                 print("There is a life vest on the boat. Wear it and step on the boat")
                 print("\nWhile travelling along the river,")
                 print("You see plastic waste floating in the water.")
-
                 print("\nYou collect the waste and help keep the river clean. ♻️")
                 print("\n🎉 BONUS MISSION COMPLETED! You receive 10 extra points.")
-
-                total= score (total)
                 print(f"🎉 Congratulation! You completed the Save Forest adventure. Your score is {total}.")
                 print ("======================================================================")
                 break
