@@ -41,4 +41,6 @@ I completed exercise 1, 2, 3 and 4
 ## Module 11
 I completed exercise 1 and 2
 
-## Module 12
+## Module 12 and 13
+I completed project 1,2,3,4 and 5
+
