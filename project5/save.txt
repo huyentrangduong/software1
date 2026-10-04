@@ -1,0 +1,5 @@
+Player: Player: jane
+Location:Location:forest
+
+Score: 30
+Choices: 4

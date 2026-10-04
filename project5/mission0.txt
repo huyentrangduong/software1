@@ -1,0 +1,8 @@
+======================================================================
+Let's start the adventure!
+You are standing at the entrance of a beautiful forest.
+Before starting your journey, you receive an adventure bag.
+Open the bag and look at your map.
+There is a big tree not far from here.
+You have to RUN to the big tree for 1st mission.
+======================================================================
