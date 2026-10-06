@@ -1,0 +1,10 @@
+======================================================================
+You need to complete three environmental missions:
+   - Mission 1: Water the tree 🌳
+   - Mission 2: Collect plastic waste ♻️
+   - Mission 3: Harvest the crops 🌾
+======================================================================
+Total points that you can earn after completation all missons
+   - Each mission gives you 10 points.
+   - You can earn another 10 points by returning by boat.
+ -> The maximum score is 40 points.
