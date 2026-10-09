@@ -1,11 +1,6 @@
 from player import Player
 from item import Item
-from function import main_menu
-from function import score
-from function import explore
-from function import run
-from function import take
-from function import harvest
+from function import main_menu, score, explore, run, take, harvest
 
 
 with open("Final_Submission_of_Project/intro.txt", "r") as file:
