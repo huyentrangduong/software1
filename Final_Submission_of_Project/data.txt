@@ -1,0 +1,4 @@
+Player: jane
+Location: forest
+Score: 50
+Choices: 4
